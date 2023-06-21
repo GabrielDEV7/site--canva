@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="https://kit.fontawesome.com/6569d2aba2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6569d2aba2.js"
+      crossorigin="anonymous"
+    ></script>
+   
     <title>EI games</title>
   </head>
   <body>
@@ -12,33 +16,39 @@
       <div class="topp">
         <img id="logo" src="/assets/logo.png.webp" alt="logo_enterprise" />
         <div class="seach">
-          <label for="seach_bar"><i class="fa-solid fa-magnifying-glass"></i></label>
+          <label for="seach_bar"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></label>
           <input id="seach_bar" type="search" placeholder="Search" />
           <button id="btn_login">Login / Register</button>
         </div>
       </div>
-      <div class="menu">
-        <ul class="nav-list">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Games</a></li>
-          <li><a href="/">Pages</a></li>
-          <li><a href="/">Articles</a></li>
-          <li><a href="/">Reviews</a></li>
-          <li><a href="/">Contact</a></li>
-        </ul>
-        <div class="Smedia"></div>
-      </div>
     </header>
-    <article>
+    <nav id="menu">
+      <ul class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Games</a></li>
+        <li><a href="/">Pages</a></li>
+        <li><a href="/">Articles</a></li>
+        <li><a href="/">Reviews</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+      <div class="Smedia"></div>
+    </nav>
+    <div class="consoles">
       <div class="ps5">
+        <img src="/assets/Design sem nome.png" />
         <button id="text1">View Games</button>
       </div>
       <div class="wii">
-        <button id="text2">View Games</button>
+        <img src="/assets/588333.png" />
       </div>
+      <button id="text2">View Games</button>
       <div class="xbox">
+        <img src="/assets/xbox-logo-4.png" alt="console_xbox">
         <button id="text3">View Games</button>
       </div>
-    </article>
+    </div> 
+    <script src="/js/script.js"></script>
   </body>
 </html>
