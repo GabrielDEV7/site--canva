@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 #seach_bar {
   outline: none;
@@ -36,13 +37,22 @@
 #seach_bar:focus {
   margin-left: -1px;
   border-radius: 10px;
-  transition: 0.10s;
-  border: #333 solid;
+  transition: 250ms;
+  border: #20d8da solid;
   width: 304px;
 }
-.seach > i{
+label{
   position: absolute;
+  color: #555555;
+   right: 400px;
+   font-size: 20px;
+   cursor: pointer;
 }
+label:hover{
+  color:#20d8da ;
+  transition: 250ms ease-in-out;
+}
+
 #btn_login {
   border: none;
   background: #20d8da;
@@ -57,4 +67,26 @@
 #btn_login:hover {
   transition: 0.3s;
   background-color: #333;
+}
+/*EDIT MENU*/
+.menu{ 
+  text-transform: none;
+  position: fixed;
+  left: 115px;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.nav-list a{
+  text-decoration: none;
+  font-weight: 300;
+  color: #555555;
+  font-size: 23px;
+}
+.nav-list a:hover{
+  color:#20d8da ;
+  transition: 250ms ease-in-out;
 }
