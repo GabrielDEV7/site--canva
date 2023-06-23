@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 body{
-  font-family:"Ysabeau Infant" ;
+  font-family:sans-serif, Verdana, Geneva, Tahoma,  ;
   font-weight:bold;
 
 }
@@ -119,45 +118,63 @@ label:hover {
 .consoles {
   display:flex;
   flex-wrap: wrap;
+  resize: both;
+  overflow: hidden;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 220px;
+  padding: 5pc 180px;
   width: 100%;
-  background-color: #555555 ;
 }
-
-.consoles img {
+.consoles img{
   max-width: 100%;
   width: 250px;
-  display: block;
 }
-.xbox img{
-  width: 350px;
-
-}
-.ps4 img{
-  width: 350px;
-}
-.btn-viewer{
-  background-color: #333;
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.box-product, .box-product-1 {
   align-items: center;
-  width: 100%;
+  width: 450px;
+  height: 300px;
+  border-right: solid rgba(85, 85, 85, 0.5) 5px;
+  padding-right: 70px;
 }
-.btn-viewer button{
-  padding: 15px;
+.box-product img{
+  width: 195px;
+  margin: auto 130px;
+  margin-top: 80px ;
+  
+}
+.box-product-1 img {
+  width: 195px;
+  margin: 50px 50px;
 }
 
-#text3 {
-  padding-right: -20px ;
+ #btn-1{
+  position:relative;
+  top: 60px;
+  left: 40%;
+  width: 160px;
+  height:50px;
 }
-.ps4 , .wii{
-  border-right: solid #ccc;
-  padding-right:45px;
- 
+#btn-2{
+  position:relative;
+  top: 10px;
+  left: 30%;
+  width: 160px;
+  height:50px;
 }
-.wii, .xbox{
-  margin-left: 17px;
+#btn-3{
+  position:relative;
+  top: 54px;
+  left: 40%;
+  width: 160px;
+  height:50px;
+}
+#btn-1, #btn-2, #btn-3{
+background: #20d8da;
+border: none;
+border-radius: 5px;
+color: #FFF;
+}
+#btn-1:hover, #btn-2:hover, #btn-3:hover{
+  background: #110000;
+  transition: 0.5s;
 }
