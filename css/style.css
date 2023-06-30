@@ -4,10 +4,9 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family:sans-serif, Verdana, Geneva, Tahoma,  ;
-  font-weight:bold;
-
+body {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  font-weight: bold;
 }
 .heade {
   width: 100%;
@@ -78,7 +77,8 @@ label:hover {
 }
 /*EDIT MENU*/
 #menu {
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 10vh;
   background-color: #fff;
@@ -116,65 +116,81 @@ label:hover {
 }
 
 .consoles {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   resize: both;
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
-  padding: 5pc 180px;
+  padding: 5pc 100px;
   width: 100%;
 }
-.consoles img{
+.consoles img {
   max-width: 100%;
   width: 250px;
 }
-.box-product, .box-product-1 {
-  align-items: center;
-  width: 450px;
+.box-product,
+.box-product-1 {
+  width: 350px;
   height: 300px;
   border-right: solid rgba(85, 85, 85, 0.5) 5px;
-  padding-right: 70px;
+  padding-right: 30px;
 }
-.box-product img{
+.box-product img {
   width: 195px;
-  margin: auto 130px;
-  margin-top: 80px ;
-  
+  margin: auto 80px;
+  margin-top: 80px;
+}
+.box-product-1 {
+  width: 195px;
+  margin: 0 80px;
+}
+
+.box-product-3 {
+  width: 195px;
+  margin: 0 auto;
+  padding-left: -100px;
+}
+.box-product-3 img {
+  margin: 0;
 }
 .box-product-1 img {
   width: 195px;
-  margin: 50px 50px;
+  margin: 0 auto;
 }
 
- #btn-1{
-  position:relative;
+#btn-1 {
+  position: relative;
   top: 60px;
   left: 40%;
   width: 160px;
-  height:50px;
+  height: 50px;
 }
-#btn-2{
-  position:relative;
+#btn-2 {
+  position: relative;
   top: 10px;
   left: 30%;
   width: 160px;
-  height:50px;
+  height: 50px;
 }
-#btn-3{
-  position:relative;
+#btn-3 {
+  position: relative;
   top: 54px;
-  left: 40%;
+  left: 20px;
   width: 160px;
-  height:50px;
+  height: 50px;
 }
-#btn-1, #btn-2, #btn-3{
-background: #20d8da;
-border: none;
-border-radius: 5px;
-color: #FFF;
+#btn-1,
+#btn-2,
+#btn-3 {
+  background: #20d8da;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
 }
-#btn-1:hover, #btn-2:hover, #btn-3:hover{
+#btn-1:hover,
+#btn-2:hover,
+#btn-3:hover {
   background: #110000;
   transition: 0.5s;
 }
