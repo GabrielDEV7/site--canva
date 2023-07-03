@@ -7,6 +7,7 @@
 body {
   font-family: sans-serif, Verdana, Geneva, Tahoma;
   font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .heade {
   width: 100%;
@@ -122,7 +123,8 @@ label:hover {
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
-  padding: 5pc 100px;
+  position: relative;
+  padding: 5pc;
   width: 100%;
 }
 .consoles img {
@@ -132,51 +134,50 @@ label:hover {
 .box-product,
 .box-product-1 {
   width: 350px;
-  height: 300px;
+  height: 200px;
   border-right: solid rgba(85, 85, 85, 0.5) 5px;
-  padding-right: 30px;
 }
 .box-product img {
   width: 195px;
-  margin: auto 80px;
-  margin-top: 80px;
+  position: absolute;
+  top: 7pc;
+  left: 7pc;
 }
-.box-product-1 {
-  width: 195px;
-  margin: 0 80px;
-}
+.box-product-1 img{
+  position: absolute;
+  top: 6pc;
+  right: 45pc;
+  width: 200px;
 
-.box-product-3 {
-  width: 195px;
-  margin: 0 auto;
-  padding-left: -100px;
-}
-.box-product-3 img {
-  margin: 0;
-}
-.box-product-1 img {
-  width: 195px;
-  margin: 0 auto;
-}
 
+}
+.box-product-2 {
+  width: 195px;
+}
+.box-product-2 img {
+  position: absolute;
+  top: 7pc;
+  right: 7pc;
+
+}
 #btn-1 {
   position: relative;
-  top: 60px;
-  left: 40%;
+  top: 8pc;
+  left: 14%;
   width: 160px;
   height: 50px;
 }
 #btn-2 {
   position: relative;
-  top: 10px;
-  left: 30%;
+  top: 8pc;
+  left: -2pc;
   width: 160px;
   height: 50px;
 }
 #btn-3 {
   position: relative;
   top: 54px;
-  left: 20px;
+  left: -2pc;
   width: 160px;
   height: 50px;
 }
